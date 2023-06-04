@@ -1,0 +1,797 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body,
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--body: #101010;
+    --accent: #00e1ff;
+	--gradient: #080808;
+	--boxShadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	background: var(--body);
+}
+
+a {
+	text-decoration: inherit;
+	color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #141113;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--accent);;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #11d7f1;
+}
+
+.branding {
+	font-family: 'Bebas Neue', cursive;
+}
+
+.JCHeader-BG {
+	background: linear-gradient(180deg, rgba(8,8,8,85%), #101010),url(https://cdn.discordapp.com/attachments/798166836050133082/968708313103626321/what-is-discord-1920x1080-c3d90ca45f57.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.JC-navBar {
+	background: rgba(0, 0, 0, 0.2);
+	margin-bottom: 25px;
+}
+
+.JC-navWidth {
+	width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.JC-navRight {
+	display: flex;
+	align-items: center;
+}
+
+.JC-navLink {
+	padding: 0px 15px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+	opacity: 0.7;
+	transition: 0.3s ease;
+}
+
+.JC-navLink:hover {
+	opacity: 1;
+	transition: 0.3s ease;
+}
+
+.JC-navLink::after {
+	background: var(--accent) !important;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    border-radius: 80px;
+    margin-top: 5px;
+    transition: .3s ease;
+}
+
+.JC-navLink:hover::after {
+	width: 10px;
+	transition: 0.3s ease;
+}
+
+.JC-BrandingText {
+	font-size: 44px;
+}
+
+.JCHeader-content {
+	height: 700px;
+	width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.JCHeader-profile {
+	border-radius: 100%;
+	width: 350px;
+}
+
+.JCHeader-title {
+	font-size: 72px;
+	font-weight: 700;
+	margin-bottom: -15px;
+	display: flex;
+	align-items: center;
+}
+
+.badge {
+	width: 40px;
+	margin-left: 15px;
+}
+
+.JCHeader-slorows {
+	margin-top: 50px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.JC-BioBox {
+	display: flex;
+	align-items: flex-start;
+}
+
+.JC-BioBox p {
+	text-transform: uppercase;
+	background: #fff;
+	font-size: 17px;
+	color: black;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 800;
+	margin-right: 10px;
+	position: relative;
+}
+
+.JC-BioHR {
+	width: 8px;
+	height: 8px;
+	margin-top: 11px;
+	background: #fff;
+}
+
+.JCHeader-slogan {
+	width: 430px;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.JCHeader-buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.JCHeader-btn-red {
+	box-shadow: 0.375em 0.375em 0 0 #631f1f;
+    position: relative;
+    transform: translate(0);
+	padding: 10px 35px;
+    font-size: 20px;
+    border: 3px solid #ff4f4f;
+    opacity: 1;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+	background: #ff4f4f;
+	margin-right: 25px;
+}
+
+.JCHeader-btn-red:hover {
+	transition: 0.3s ease;
+	color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #631f1f;
+}
+
+.JCHeader-btn-pink {
+	box-shadow: 0.375em 0.375em 0 0 #5e2763;
+    position: relative;
+    transform: translate(0);
+	padding: 10px 50px;
+    font-size: 20px;
+    border: 3px solid #f264ff;
+    opacity: 1;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+	background: #f264ff;
+	margin-right: 25px;
+}
+
+.JCHeader-btn-pink:hover {
+	transition: 0.3s ease;
+	color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #5e2763;
+}
+
+.JC-Section {
+    padding: 100px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.JC-SectionTop {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.JC-SectionTitle {
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-shadow: 5px 6px 0px #3D3D3D;
+	color: #00E1FF;
+}
+
+.JC-SectionStats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.JC-SocialBox {
+    width: 300px;
+    background: #00c6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 15px;
+	box-shadow: var(--boxShadow);
+    border-radius: 20px;
+	height: 280px;
+	transition: 0.3s ease;
+	justify-content: space-between;
+	position: relative;
+	top: 0px;
+}
+
+.JC-SocialBox-icon {
+    font-size: 40px;
+    margin-top: 25px;
+	margin-bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.JC-SocialBox-big {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.JC-SocialBox-small {
+    font-size: 14px;
+    opacity: 0.8;
+    width: 200px;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.JC-SocialBox-btn {
+	background: #0093ff;
+	width: 100%;
+	text-align: center;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 15px 0px;
+	font-size: 20px;
+	transition: 0.3s ease;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.redS {
+	background: #ff5460;
+}
+
+.redS .JC-SocialBox-btn {
+	background: #ff0000;
+}
+
+.orangeS {
+	background: #ff8716;
+}
+
+.orangeS .JC-SocialBox-btn {
+	background: #ffae00;
+}
+
+.disR {
+	background: #4f79bb;
+}
+
+.disR .JC-SocialBox-btn {
+	background: #4063c4;
+}
+
+.nameR {
+	background: #d59cdb;
+}
+
+.nameR .JC-SocialBox-btn {
+	background: #b85fc5;
+}
+
+.JC-SocialBox:hover {
+	position: relative;
+	transition: 0.3s ease;
+	top: -15px;
+}
+
+.JC-SocialBox:hover .JC-SocialBox-btn {
+	background: transparent;
+	transition: 0.3s ease;
+}
+
+.JC-AboutSection {
+    width: 800px;
+    margin: 0 auto;
+    background: rgba(0,0,0,20%);
+    padding: 10px 50px;
+    border-radius: 15px;
+	box-shadow: var(--boxShadow);
+}
+
+/*
+
+.mediaSection {
+	background: linear-gradient(180deg, rgb(21 21 21), #12070e);
+	background-color: #151515;
+}
+
+.statsSection {
+	background: linear-gradient(180deg, rgba(8,8,8,95%), #151515),url(https://cdn.discordapp.com/attachments/798166836050133082/967616430554120262/wp9371401.png);
+	background-size: cover;
+	background-position: center;
+	background-color: #151515;
+}
+*/
+
+.JC-AboutSection p {
+	line-height: 30px;
+	margin: 50px 0px;
+	opacity: 0.8;
+}
+
+.JC-AboutSection span {
+	margin-right: 5px;
+}
+
+.JC-SectionPartners {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.JC-PartnerBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 550px;
+	background: #111111;
+	border: 2px solid #1f1f1f;
+	margin-right: 15px;
+	border-radius: 20px;
+	padding: 20px 50px;
+	text-align: center;
+	transition: 0.3s ease;
+	position: relative;
+	top: 0px;
+	height: 250px;
+}
+
+.JC-PartnerBox:hover {
+	transition: 0.3s ease;
+	position: relative;
+	top: -5px;
+}
+
+.JC-PartnerImage {
+	width: 80px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+.brid {
+	top: -20px;
+    position: relative;
+	width: 150px;
+}
+
+.brid-desc {
+	margin-top: -30px;
+}
+
+.brid-link {
+	position: relative !important;
+    top: 60px !important;
+}
+
+.JC-PartnerDesc {
+    opacity: 0.7;
+}
+
+.JC-PartnerLink {
+	box-shadow: 0.375em 0.375em 0 0 rgba(255,158,0,22%);
+    position: relative;
+    transform: translate(0);
+	padding: 10px 50px;
+    font-size: 20px;
+    border: 3px solid #ff9e00;
+    opacity: 1;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+	background: #ff9e00;
+	top: 40px;
+}
+
+.JC-PartnerLink:hover {
+	transition: 0.3s ease;
+	color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #5e2763;
+}
+
+.blueLink {
+    box-shadow: 0.375em 0.375em 0 0 rgba(39,151,191,22%);
+    background: #2caddc;
+    border: 3px solid #2caddc;
+}
+
+.blueLink:hover {
+	color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #631f1f;
+}
+
+.contactPart {
+	padding-top: 200px;
+}
+
+.JC-ContactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.JC-ContactSection {
+	margin-top: 15px;
+}
+
+.JC-ContactTitle {
+	width: 700px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 19px;
+}
+
+.JC-ContactTitle span {
+	color: var(--accent);
+}
+
+.JC-ContactInput {
+	padding: 20px 15px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 20px;
+	border: inherit;
+	outline: inherit;
+	width: 600px;
+	margin-bottom: 15px;
+}
+
+.JC-ContactTextArea {
+	padding: 20px 15px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 20px;
+	width: 600px;
+	max-width: 600px;
+	min-height: 250px;
+	border: inherit;
+	outline: inherit;
+}
+
+.JC-ContactSubmit {
+	font-family: 'Poppins', sans-serif;
+	background: #00a7ff;
+	color: #fff;
+	padding: 15px;
+	border-radius: 80px;
+	font-weight: 700;
+	font-size: 20px;
+	border: inherit;
+	width: 150px;
+	margin-top: -30px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	border: 3px solid #00a7ff;
+	transition: 0.3s ease;
+	text-transform: uppercase;
+}
+
+.JC-ContactSubmit:hover {
+	background: #fff;
+	border: 3px solid #00a7ff;
+	transition: 0.3s ease;
+	color: black;
+}
+
+.JC-SocialBox-image {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.JC-SocialIcon-image {
+    width: 35px;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.JC-Footer {
+    background: rgba(8,8,8,0.5);
+}
+
+.JC-FooterWidth {
+	width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0px;
+}
+
+.JC-CopyLink {
+	opacity: 0.6;
+	transition: 0.3s ease;
+}
+
+.JC-CopyLink:hover {
+	opacity: 1;
+	transition: 0.3s ease;
+}
+
+.JC-CopyImage {
+	width: 60px;
+}
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1350px) {
+	.JC-navWidth {
+		width: 90%;
+	}
+
+	.JCHeader-content {
+		width: 90%;
+	}
+
+	.JC-SectionTop {
+		width: 90%;
+	}
+
+	.JCHeader-content {
+		height: auto;
+		min-height: 700px;
+	}
+
+	.JC-SectionStats {
+		width: 90%;
+	}
+
+	.JC-FooterWidth {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.JC-SectionPartners {
+		flex-direction: column;
+	}
+
+	.JC-PartnerBox {
+		width: 90%;
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.JCHeader-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 100px 0px;
+	}
+
+	.JCHeader-right {
+		margin-top: 80px;
+	}
+
+	.JCHeader-profile {
+		width: 200px;
+	}
+
+	.JCHeader-title {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.JCHeader-buttons {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.JC-navLink {
+		display: none;
+	}
+
+	.JC-SectionStats {
+		flex-direction: column;
+	}
+
+	.JC-SocialBox {
+		width: 90%;
+		margin: 15px 0px;;
+	}
+
+	.JC-AboutSection {
+		width: 90%;
+	}
+
+	.JC-SectionStats {
+		width: 100%;
+	}
+
+	.JC-ContactTitle {
+		width: 90%;
+		text-align: center;
+	}
+
+	.JC-ContactInput {
+		width: 90%;
+	}
+
+	.JC-navLeft {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.JC-ContactTextArea {
+		width: 90%;
+		max-width: 100%;
+	}
+
+	.JC-FooterWidth {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.JC-ContactSubmit {
+		width: 250px;
+	}
+
+	.JC-ContactSection {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.JC-ContactForm {
+		width: 100%;
+	}
+
+	.JC-PartnerBox {
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.JCHeader-title {
+		font-size: 54px;
+	}
+
+	.JC-BioBox {
+		display: none;
+	}
+
+	.JCHeader-slogan {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.JC-PartnerLink {
+		top: 0px !important;
+	}
+
+	.JC-PartnerBox {
+		height: auto;
+    	min-height: 300px;
+	}
+
+	.JC-PartnerLink {
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.JCHeader-title {
+		font-size: 45px;
+	}
+
+	.JCHeader-slogan {
+		width: 90%;
+		font-size: 15px;
+	}
+
+	.JCHeader-buttons {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.JCHeader-btn-red {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+
+	.JCHeader-btn-pink {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
