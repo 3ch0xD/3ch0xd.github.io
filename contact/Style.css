@@ -1,0 +1,102 @@
+@font-face {
+    font-family: pixelated;
+    src: url(/contact/fonts/PxPlus_ToshibaTxL1_8x16.ttf);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.bg2{
+    position: absolute;
+    padding: 0px 800px 550px;
+    background-color: #1c1c1c;
+    left: 0;
+    top: 20%;
+    border: 1px solid #444444;
+    border-left: hidden;
+    z-index: -1;
+}
+
+form{
+    position: absolute;
+    top: 28%;
+    left:32%;
+}
+
+.form-group label{
+    font-family: pixelated, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #ededed;
+}
+
+.form-group input{
+    background-color: #CF211D;
+    border: #880e0c solid 5px;
+    color: #ededed;
+    width: 500px;
+    height: 25px;
+    box-shadow: #CF211D 5px 0px 50px;
+    font-family: pixelated, sans-serif;
+}
+
+.form-group textarea{
+    background-color: #CF211D;
+    border: #880e0c solid 5px;
+    color: #ededed;
+    width: 500px;
+    height: 100px;
+    box-shadow: #CF211D 5px 0px 50px;
+    font-family: pixelated, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: #ededed;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    background-color: #CF211D;
+    border: #880e0c solid 5px;
+    color: #ededed;
+    width: 510px;
+    height: 50px;
+    font-size: 32px;
+    box-shadow: #CF211D 5px 0px 50px;
+    font-family: pixelated, sans-serif;
+}
+
+
+p{
+    visibility: hidden;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+footer h1{
+    font-family: pixelated,sans-serif;
+    color: #9F9F9F;
+    font-size: 15px;
+}
+
+footer h1 a{
+    color: #ffff;
+    text-decoration: none;
+    transition: .2s ease-out;
+}
+
+footer h1 a:hover{
+    color:#F07A3C;
+    transition: .2s ease-in;
+}
