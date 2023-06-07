@@ -1,0 +1,115 @@
+@font-face {
+    font-family: pixelated;
+    src: url(fonts/PxPlus_ToshibaTxL1_8x16.ttf);
+}
+
+
+body{
+    background: #000;
+    box-sizing: border-box;
+    font-family: pixelated,sans-serif;
+    overflow: hidden;
+}
+
+.profile-picture{
+    display: flex;
+    justify-content: center;
+    padding-top:50px ;
+}
+
+.name{
+    font-size: 42px;
+    color: #ededed;
+    text-align: center;
+}
+
+.bg2{
+    background-color: #1c1c1c;
+    padding: 140px;
+    border: 3px solid #4444;
+}
+
+.text h2{
+    color: #9F9F9F;
+    font-size: 20px;
+    position: absolute;
+    padding: 50px 50px;
+    top: 400px;
+}
+
+
+.btns {
+    box-shadow: 0.375em 0.375em 0 0 #1f5063;
+    position: absolute;
+    top: 600px;
+    left: 40%;
+    transform: translate(0);
+    padding: 10px 35px;
+    font-size: 20px;
+    border: 3px solid #49b6ff;
+    opacity: 1;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #49b6ff;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.btns:hover {
+    transition: 0.3s ease;
+    color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #631f1f;
+}
+
+.btns2 {
+    box-shadow: 0.375em 0.375em 0 0 #9b6500;
+    position: absolute;
+    top: 600px;
+    left: 52%;
+    transform: translate(0);
+    padding: 10px 35px;
+    font-size: 20px;
+    border: 3px solid #ff9d2e;
+    opacity: 1;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #ff9d2e;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.btns2:hover {
+    transition: 0.3s ease;
+    color: black;
+    transform: translate(0.375em,0.375em);
+    box-shadow: 0 0 0 0 #631f1f;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+footer h1{
+    font-family: pixelated,sans-serif;
+    color: #9F9F9F;
+    font-size: 15px;
+}
+
+footer h1 a{
+    color: #ffff;
+    text-decoration: none;
+    transition: .2s ease-out;
+}
+
+footer h1 a:hover{
+    color:#F07A3C;
+    transition: .2s ease-in;
+}
+
